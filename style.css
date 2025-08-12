@@ -1,0 +1,14 @@
+/* Esconder a seção por padrão, apenas o que não é tratado pelo Bootstrap */
+.hidden {
+    display: none !important;
+}
+
+/* Alguns ajustes extras, se necessário */
+body {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+/* Opcional: para garantir que o iframe preencha o card */
+.ratio {
+    height: 100%;
+}
