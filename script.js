@@ -1,12 +1,9 @@
 // Substitua as informações abaixo pelas suas credenciais do Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCJUfE_tJIR7-UiUjgU5K_sLR0_WkmR4Ug",
-    authDomain: "datacenter-2e7cc.firebaseapp.com",
-    projectId: "datacenter-2e7cc",
-    storageBucket: "datacenter-2e7cc.firebasestorage.app",
-    messagingSenderId: "522919313513",
-    appId: "1:522919313513:web:2ad5daeba62f4ec27a62f8",
-    measurementId: "G-318TQ8CWM0"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    // ... outras configurações
 };
 
 // Inicialize o Firebase
