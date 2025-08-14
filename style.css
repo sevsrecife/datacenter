@@ -26,7 +26,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+#main-content {
+    /* Ajustes para o conteúdo principal */
     padding-top: 80px; /* Para evitar que o conteúdo fique atrás da navbar fixa */
+    padding-bottom: 5rem; /* Espaçamento entre o main e o footer */
 }
 
 /* Os outros estilos já existentes permanecem */

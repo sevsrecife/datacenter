@@ -35,8 +35,11 @@
 
     <div id="bi-dashboards" class="hidden">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Painéis de BI</a>
+            <div class="container-fluid d-flex align-items-center">
+                <div class="d-flex flex-column text-center flex-grow-1">
+                    <h2 class="mb-0 text-light fs-5">Secretaria de Vigilância em Saúde do Recife</h2>
+                    <p class="mb-0 text-light">Sala de situação</p>
+                </div>
                 <button id="logout-button" class="btn btn-light ms-auto">Sair</button>
             </div>
         </nav>
@@ -57,15 +60,243 @@
                 <div class="d-grid gap-2">
                     <a href="https://sites.google.com/view/visadistrito1/in%C3%ADcio" class="btn btn-primary" role="button" target="_blank">Planilhas e monitoramento interno da VISA-RECIFE</a>
                 </div>
+
+                <div class="col-12 mt-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Indicadores distritais</h3>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Gerência SEVS</th>
+                                            <th scope="col">Área</th>
+                                            <th scope="col">Indicadores estratégicos de VS</th>
+                                            <th scope="col">Meta</th>
+                                            <th scope="col">Instrumento de gestão</th>
+                                            <th scope="col">Periodicidade de solicitação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <tr>
+                                            <td>Vig. Ambiental</td>
+                                            <td>Controle vetorial</td>
+                                            <td>Proporção de imóveis trabalhados para o controle das arboviroses</td>
+                                            <td>70%</td>
+                                            <td>A pactuar -</td>
+                                            <td>Mensal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST, Políticas transversais</td>
+                                            <td>% de gestantes vivendo com HIV em uso de terapia antirretroviral (Tarv)</td>
+                                            <td>≥ 90%</td>
+                                            <td>Mapa da estratégia</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST, Políticas transversais</td>
+                                            <td>% de gestantes tratadas adequadamente para sífilis</td>
+                                            <td>≥ 90%</td>
+                                            <td>Mapa da estratégia</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT, Políticas transversais</td>
+                                            <td>% de casos novos de tuberculose testados para HIV</td>
+                                            <td>≥ 90%</td>
+                                            <td>Desempenho dos gestores</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST/DDT, Políticas transversais</td>
+                                            <td>% de casos de coinfecção TB/HIV vinculados ao SAE</td>
+                                            <td>≥ 95%</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT</td>
+                                            <td>Proporção de contatos examinados de casos novos de hanseníase</td>
+                                            <td>≥ 82%</td>
+                                            <td>PQAVS; RDQ</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT</td>
+                                            <td>Proporção de contatos examinados de casos novos de tuberculose pulmonar com confirmação laboratorial</td>
+                                            <td>≥ 70%</td>
+                                            <td>PQAVS; RDQ</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT</td>
+                                            <td>% de abandono do tratamento de hanseníase entre os casos novos diagnosticados nos anos das coortes em menores de 15 anos</td>
+                                            <td>≤ 10%</td>
+                                            <td>A pactuar -</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>SIS, Saúde da criança</td>
+                                            <td>% Crianças de risco acompanhadas pelas USF de cobertura</td>
+                                            <td>A pactuar</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>Serviço de saúde</td>
+                                            <td>% de licenças sanitárias alto risco, com atividades de serviços de saúde, emitidas em menos de 120 dias</td>
+                                            <td>≥ 90%</td>
+                                            <td>RDQ; Rota do Futuro</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>Serviço de saúde</td>
+                                            <td>% de licenças sanitárias alto risco, com atividades de serviços de saúde, emitidas em menos de 60 dias (drogaria)</td>
+                                            <td>≥ 70%</td>
+                                            <td>Projeto estratégico SESAU</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>-</td>
+                                            <td>% de licenças automáticas de médio risco monitoradas</td>
+                                            <td>100%</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>-</td>
+                                            <td>% de processos sanitários com atividade de serviço de saúde em aberto</td>
+                                            <td>Acompanhar</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Cronograma de encontros</h3>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Gerência SEVS</th>
+                                            <th scope="col">Área</th>
+                                            <th scope="col">Indicadores estratégicos de VS</th>
+                                            <th scope="col">Periodicidade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <tr>
+                                            <td>Vig. Ambiental</td>
+                                            <td>Controle vetorial</td>
+                                            <td>Proporção de imóveis trabalhados para o controle das arboviroses</td>
+                                            <td>Maio, Agosto, Novembro</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>Serviço de saúde</td>
+                                            <td>% de licenças sanitárias alto risco, com atividades de serviços de saúde, emitidas em menos de 120 dias</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>Serviço de saúde</td>
+                                            <td>% de licenças sanitárias alto risco, com atividades de serviços de saúde, emitidas em menos de 60 dias</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>-</td>
+                                            <td>% de licenças automáticas de médio risco monitoradas</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Sanitária</td>
+                                            <td>-</td>
+                                            <td>% de processos sanitários com atividade de serviço de saúde em aberto</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST</td>
+                                            <td>% de gestantes vivendo com HIV em uso de terapia antirretroviral (Tarv)</td>
+                                            <td>Junho, Setembro, Dezembro</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST</td>
+                                            <td>% de gestantes tratadas adequadamente para sífilis</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST/DDT</td>
+                                            <td>% de casos novos de tuberculose testados para HIV</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>IST</td>
+                                            <td>% de casos de coinfecção TB/HIV vinculados ao SAE</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT</td>
+                                            <td>Proporção de contatos examinados de casos novos de tuberculose pulmonar com confirmação laboratorial</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>SIS</td>
+                                            <td>% Crianças de risco acompanhadas pelas USF de cobertura (menor de 01 ano)</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT</td>
+                                            <td>% de contatos examinados de casos novos de hanseníase</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vig. Epidemiológica</td>
+                                            <td>DDT</td>
+                                            <td>% de abandono do tratamento de hanseníase entre os casos novos diagnosticados nos anos das coortes em menores de 15 anos</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
-    </div>
 
-    <footer class="bg-body-tertiary text-center">
-        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
-            Desenvolvido por: Núcleo de transformação digital SEVS RECIFE
-        </div>
-    </footer>
+        <footer class="text-center py-2 text-dark">
+            <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
+                Desenvolvido por: Núcleo de transformação digital SEVS RECIFE
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

@@ -59,7 +59,9 @@ loginForm.addEventListener('submit', (e) => {
 logoutButton.addEventListener('click', () => {
     auth.signOut()
         .then(() => {
-            // O observador onAuthStateChanged cuidará da mudança de tela
+            // Limpa o cache do navegador para garantir uma nova sessão
+            // Este é um método de forçar um "hard reload"
+            window.location.reload(true);
         })
         .catch((error) => {
             console.error('Erro ao sair:', error.message);
