@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de BI - Acesso Restrito</title>
+    <title>Portal de acesso a Sala de situação</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -15,9 +15,9 @@
     <div id="auth-section" class="d-flex justify-content-center align-items-center vh-100">
         <div class="card p-4 shadow-sm" style="width: 25rem;">
             <div id="login-container">
-                <h1 class="card-title text-center mb-4">Acesso Restrito</h1>
+                <h1 class="card-title text-center mb-4">Sala de Situação</h1>
                 <div class="alert alert-info text-center" role="alert">
-                    Para ter acesso, por favor, entre em contato com o <a href="https://wa.me/5581997367105" target="_blank">Denis Carvalho</a>.
+                    Entre em contato com o <a href="https://wa.me/5581997367105" target="_blank">administrador</a> e solicite suas credenciais de acesso. 
                 </div>
                 <form id="login-form">
                     <div class="mb-3">
@@ -41,7 +41,7 @@
             </div>
         </nav>
 
-        <main class="container mt-5 pt-5">
+        <main id="main-content" class="container mt-5 pt-5">
             <div class="row g-4">
                 <div class="col-12">
                     <div class="card shadow-sm">
@@ -54,19 +54,18 @@
                     </div>
                 </div>
                 
-                <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title">Acesso VISA</h3>
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://app.powerbi.com/view?r=ey..." allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-grid gap-2">
+                    <a href="https://sites.google.com/view/visadistrito1/in%C3%ADcio" class="btn btn-primary" role="button" target="_blank">Planilhas e monitoramento interno da VISA-RECIFE</a>
                 </div>
             </div>
         </main>
     </div>
+
+    <footer class="bg-body-tertiary text-center">
+        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
+            Desenvolvido por: Núcleo de transformação digital SEVS RECIFE
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

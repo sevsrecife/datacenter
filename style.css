@@ -1,14 +1,52 @@
-/* Esconder a seção por padrão, apenas o que não é tratado pelo Bootstrap */
+#auth-section {
+    min-height: 100vh;
+    background-image: url('img/saladesituacao.png'); /* Imagem de fundo para a tela de login */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#auth-section > div.card {
+    width: 25rem;
+}
+
 .hidden {
     display: none !important;
 }
 
-/* Alguns ajustes extras, se necessário */
-body {
-    background-color: #f8f9fa; /* Cor de fundo suave */
+#bi-dashboards {
+    /* Fundo gradiente em tons neutros para a tela principal */
+    background-image: linear-gradient(to right, #e0eafc, #cfdef3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 80px; /* Para evitar que o conteúdo fique atrás da navbar fixa */
 }
 
-/* Opcional: para garantir que o iframe preencha o card */
-.ratio {
-    height: 100%;
+/* Os outros estilos já existentes permanecem */
+nav.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.auth-image-container {
+    flex: 1;
+    min-height: 100vh;
+}
+
+.auth-form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 5%;
+    margin-left: auto;
 }
