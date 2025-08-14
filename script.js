@@ -20,14 +20,43 @@ const logoutButton = document.getElementById('logout-button');
 
 const loginErrorMessage = document.getElementById('login-error-message');
 
+// Variáveis para controle de inatividade
+const inactivityTime = 10 * 60 * 1000; // 10 minutos em milissegundos
+let timeout;
+
+// Função para resetar o temporizador
+function resetTimer() {
+    clearTimeout(timeout);
+    timeout = setTimeout(logout, inactivityTime);
+}
+
+// Função para deslogar o usuário e recarregar a página
+function logout() {
+    auth.signOut()
+        .then(() => {
+            window.location.reload(true);
+        })
+        .catch((error) => {
+            console.error('Erro ao sair:', error.message);
+        });
+}
+
+// Eventos para detectar a atividade do usuário
+document.addEventListener('mousemove', resetTimer);
+document.addEventListener('keypress', resetTimer);
+document.addEventListener('scroll', resetTimer);
+document.addEventListener('click', resetTimer);
+
 // Função para exibir ou esconder seções
 function toggleSections(loggedIn) {
     if (loggedIn) {
         authSection.classList.add('hidden');
         biDashboardsSection.classList.remove('hidden');
+        resetTimer(); // Inicia o temporizador quando o usuário faz login
     } else {
         authSection.classList.remove('hidden');
         biDashboardsSection.classList.add('hidden');
+        clearTimeout(timeout); // Limpa o temporizador quando o usuário está deslogado
     }
 }
 
@@ -57,13 +86,5 @@ loginForm.addEventListener('submit', (e) => {
 
 // Lidar com o botão de logout
 logoutButton.addEventListener('click', () => {
-    auth.signOut()
-        .then(() => {
-            // Limpa o cache do navegador para garantir uma nova sessão
-            // Este é um método de forçar um "hard reload"
-            window.location.reload(true);
-        })
-        .catch((error) => {
-            console.error('Erro ao sair:', error.message);
-        });
+    logout();
 });
